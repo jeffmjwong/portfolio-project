@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Satisfy|Open+Sans:400,600');
 
 @keyframes move-right {
   0% {
@@ -32,7 +32,7 @@
     width: 0;
   }
   100% {
-    width: 8.8em;
+    width: 5.9em;
   }
 }
 
@@ -78,6 +78,17 @@
   }
 }
 
+@keyframes click-fade-in {
+  0% {
+    opacity: 1;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
 @keyframes button-fade-in {
   0% {
     opacity: 1;
@@ -105,17 +116,18 @@ body {
 }
 
 .home-container.home-page {
-  background: linear-gradient(-45deg, hsla(0, 0%, 0%, 1), hsla(0, 0%, 20%, 1));
+  /* background: linear-gradient(-45deg, hsla(0, 0%, 0%, 1), hsla(0, 0%, 20%, 1)); */
+  background: linear-gradient(-45deg, hsla(180, 100%, 25%, 0.6), hsla(180, 100%, 25%, 0.2));
 }
 
 .home-intro-line1 {
   position: absolute;
   top: calc(0vh + 1em);
-  left: 15%;
+  left: 20%;
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: hsla(180, 100%, 15%, 1);
   font-weight: 600;
-  width: 8.8em;
+  width: 5.9em;
   margin: 0 auto;
   border-right: 2px solid hsla(0, 0%, 50%, 1);
   font-size: 4rem;
@@ -124,16 +136,16 @@ body {
 }
 
 .anim-typewriter-line1 {
-  animation: type-writer-line1 1.8s steps(25) 1s 1 normal both,
-             blink-text-cursor-line1 0.1s 2.9s forwards;
+  animation: type-writer-line1 1.2s steps(20) 1s 1 normal both,
+             blink-text-cursor-line1 0.1s 2.4s forwards;
 }
 
 .home-intro-line2 {
   position: absolute;
   top: calc(0vh + 6em);
-  left: 15%;
+  left: 20.5%;
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: hsla(180, 100%, 15%, 0.7);
   font-weight: 400;
   width: 17em;
   margin: 0 auto;
@@ -143,8 +155,33 @@ body {
 }
 
 .anim-typewriter-line2 {
-  animation: type-writer-line2 0.8s steps(20) 3s 1 normal both;
+  animation: type-writer-line2 0.8s steps(20) 2.6s 1 normal both;
 }
+
+.home-middle-image {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: calc(0vh + 13.5em);
+  left: 35%;
+  /* border: 2px solid black; */
+  transform: rotate(45deg);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+}
+
+.home-middle-image div:nth-child(3),
+.home-middle-image div:nth-child(5),
+.home-middle-image div:nth-child(6),
+.home-middle-image div:nth-child(7),
+.home-middle-image div:nth-child(8) {
+  background-image: url('space1.jpg');
+  background-position: center;
+}
+
 
 .home-dots {
   position: absolute;
@@ -199,24 +236,42 @@ body {
   animation-delay: -1.2s;
 }
 
-.home-button {
+.home-click {
   position: absolute;
   bottom: calc(0vh + 3em);
   left: 40%;
+  font-family: 'Satisfy', cursive;
+  font-size: 3em;
+  color: hsla(180, 100%, 12%, 1);
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.anim-click-fade-in {
+  animation: click-fade-in forwards;
+  animation-duration: 0.2s;
+  animation-delay: 5.2s;
+  animation-timing-function: linear;
+}
+
+.home-button {
+  position: absolute;
+  bottom: calc(0vh + 5em);
+  left: 60%;
   background-color: transparent;
-  color: black;
   opacity: 0;
 }
 
 .anim-button-fade-in {
   animation: button-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 4.5s;
+  animation-delay: 4s;
   animation-timing-function: ease-in-out;
 }
 
 .fa.home {
-  color: white;
+  color: hsla(180, 100%, 15%, 1);
+  cursor: pointer;
 }
 
 .middle-page {
