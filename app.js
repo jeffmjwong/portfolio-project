@@ -9,32 +9,32 @@ const thirdPageRightBar = document.querySelectorAll('.third-page .sliding-bar')[
 const forthPage = document.querySelector('.main-container.forth-page')
 const forthPageLeftBar = document.querySelector('.forth-page .sliding-bar');
 
-firstPageRightBar.addEventListener('click', function() {
+firstPageRightBar.addEventListener('click', () => {
   firstPage.style.display = "none";
   secondPage.style.display = "grid";
 });
 
-secondPageLeftBar.addEventListener('click', function() {
+secondPageLeftBar.addEventListener('click', () => {
   secondPage.style.display = "none";
   firstPage.style.display = "grid";
 });
 
-secondPageRightBar.addEventListener('click', function() {
+secondPageRightBar.addEventListener('click', () => {
   secondPage.style.display = "none";
   thirdPage.style.display = "grid";
 });
 
-thirdPageLeftBar.addEventListener('click', function() {
+thirdPageLeftBar.addEventListener('click', () => {
   thirdPage.style.display = "none";
   secondPage.style.display = "grid";
 });
 
-thirdPageRightBar.addEventListener('click', function() {
+thirdPageRightBar.addEventListener('click', () => {
   thirdPage.style.display = "none";
   forthPage.style.display = "grid";
 });
 
-forthPageLeftBar.addEventListener('click', function() {
+forthPageLeftBar.addEventListener('click', () => {
   forthPage.style.display = "none";
   thirdPage.style.display = "grid";
 });
