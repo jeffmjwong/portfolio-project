@@ -26,41 +26,77 @@
           <div></div>
         </div>
         <p class="home-click anim-click-fade-in">Click here to continue</p>
-        <div class="home-button anim-button-fade-in">
-          <i class="fa fa-chevron-circle-right fa-4x home"></i>
+        <div class="button-at-homepage anim-button-fade-in">
+          <i class="fa fa-chevron-circle-right fa-3x home-go-next"></i>
         </div>
       </section>
 
       <section class="main-container first-page">
-        <div class="middle-page">
-          <p>HOME PAGE</p>
-        </div>
+        <!-- Left Column -->
+        <section class="first-page-left-column">
+          <div class="profile-pic-container">
+            <img src="img/profile1.jpg" alt="Profile Photo" class="profile-pic">
+            <div class="profile-pic-name">
+              <h2>Jeff Wong</h2>
+            </div>
+          </div>
+          <div class="profile-stats-container">
+            <p><i class="fa fa-briefcase fa-fw"></i>Software Developer</p>
+            <p><i class="fab fa-css3-alt fa-fw"></i></i>UX/UI Web Designer</p>
+            <p><i class="fa fa-home fa-fw"></i>Brisbane, QLD</p>
+            <p><i class="fa fa-envelope fa-fw"></i>jeffmjwong@gmail.com</p>
+            <p><i class="fa fa-phone fa-fw"></i>0433 858 330</p>
+          </div>
+        </section>
 
+        <!-- Right Column -->
+        <section class="first-page-right-column">
+          <article class="profile-highlights">
+            <h2>Professional Highlights</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              fringilla, leo ut vulputate gravida, erat arcu accumsan orci, eu
+              auctor enim mi efficitur mi. Nullam nulla purus, dignissim vitae
+              lobortis non, lacinia nec nulla. Aliquam semper congue urna, in
+              commodo nisi laoreet eget. Morbi sem ex, accumsan non arcu ac,
+              accumsan porta enim.</p><hr>
+            <h2>Technical Expertise</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              fringilla, leo ut vulputate gravida, erat arcu accumsan orci, eu
+              auctor enim mi efficitur mi. Nullam nulla purus, dignissim vitae
+              lobortis non, lacinia nec nulla. Aliquam semper congue urna, in
+              commodo nisi laoreet eget. Morbi sem ex, accumsan non arcu ac,
+              accumsan porta enim.</p><hr>
+            <h2>Education</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              fringilla, leo ut vulputate gravida, erat arcu accumsan orci, eu
+              auctor enim mi efficitur mi. Nullam nulla purus, dignissim vitae
+              lobortis non, lacinia nec nulla. Aliquam semper congue urna, in
+              commodo nisi laoreet eget. Morbi sem ex, accumsan non arcu ac,
+              accumsan porta enim.</p>
+          </article>
+        </section>
+
+        <!-- Right Sliding Bar -->
         <div class="sliding-bar right">
           <i class="fa fa-angle-double-right fa-2x right"></i>
         </div>
 
-        <footer class="footer-container w3-teal w3-center w3-margin-top">
-          <p>Copyright by Jeff Wong</p>
-          <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <footer class="footer-container">
+          <div class="footer-home-button" title="Home Page">
+            <i class="fa fa-home fa-2x home-go-back"></i>
+          </div>
+          <nav class="footer-nav">
+            <a href="#" class="current-nav">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+          </nav>
+          <div class="footer-copyright">
+            <p>Copyright by Jeff Wong</p>
+          </div>
         </footer>
       </section>
 
       <section class="main-container second-page">
-        <div class="sliding-bar left">
-          <i class="fa fa-angle-double-left fa-2x left"></i>
-        </div>
-
-        <div class="middle-page">
-          <p>ABOUT PAGE</p>
-        </div>
-
-        <div class="sliding-bar right">
-          <i class="fa fa-angle-double-right fa-2x right"></i>
-        </div>
-      </section>
-
-      <section class="main-container third-page">
         <div class="sliding-bar left">
           <i class="fa fa-angle-double-left fa-2x left"></i>
         </div>
@@ -72,9 +108,23 @@
         <div class="sliding-bar right">
           <i class="fa fa-angle-double-right fa-2x right"></i>
         </div>
+
+        <footer class="footer-container">
+          <div class="footer-home-button" title="Home Page">
+            <i class="fa fa-home fa-2x home-go-back"></i>
+          </div>
+          <nav class="footer-nav">
+            <a href="#">About</a>
+            <a href="#" class="current-nav">Projects</a>
+            <a href="#">Contact</a>
+          </nav>
+          <div class="footer-copyright">
+            <p>Copyright by Jeff Wong</p>
+          </div>
+        </footer>
       </section>
 
-      <section class="main-container forth-page">
+      <section class="main-container third-page">
         <div class="sliding-bar left">
           <i class="fa fa-angle-double-left fa-2x left"></i>
         </div>
@@ -83,7 +133,43 @@
           <p>CONTACT PAGE</p>
         </div>
 
+        <!-- <div class="sliding-bar right">
+          <i class="fa fa-angle-double-right fa-2x right"></i>
+        </div> -->
+
+        <footer class="footer-container">
+          <div class="footer-home-button" title="Home Page">
+            <i class="fa fa-home fa-2x home-go-back"></i>
+          </div>
+          <nav class="footer-nav">
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#" class="current-nav">Contact</a>
+          </nav>
+          <div class="footer-copyright">
+            <p>Copyright by Jeff Wong</p>
+          </div>
+        </footer>
       </section>
+
+      <!-- <section class="main-container forth-page">
+        <div class="sliding-bar left">
+          <i class="fa fa-angle-double-left fa-2x left"></i>
+        </div>
+
+        <div class="middle-page">
+          <p>CONTACT PAGE</p>
+        </div>
+
+        <footer class="footer-container">
+          <div class="footer-home-button" title="Home Page">
+            <i class="fa fa-home fa-2x home-go-back"></i>
+          </div>
+          <div class="footer-copyright">
+            <p>Copyright by Jeff Wong</p>
+          </div>
+        </footer>
+      </section> -->
     </main>
 
     <script src="app.js"></script>

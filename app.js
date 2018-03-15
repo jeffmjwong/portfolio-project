@@ -1,5 +1,7 @@
 const homePage = document.querySelector('.home-container.home-page')
-const homeButton = document.querySelector('.home-button');
+const nextButton = document.querySelector('.button-at-homepage');
+const homeButton = document.getElementsByClassName('footer-home-button');
+const allPageMinusHome = document.getElementsByClassName('main-container');
 const firstPage = document.querySelector('.main-container.first-page')
 const firstPageRightBar = document.querySelector('.first-page .sliding-bar');
 const secondPage = document.querySelector('.main-container.second-page')
@@ -11,10 +13,19 @@ const thirdPageRightBar = document.querySelectorAll('.third-page .sliding-bar')[
 const forthPage = document.querySelector('.main-container.forth-page')
 const forthPageLeftBar = document.querySelector('.forth-page .sliding-bar');
 
-homeButton.addEventListener('click', () => {
+nextButton.addEventListener('click', () => {
   homePage.style.display = "none";
   firstPage.style.display = "grid";
 });
+
+Array.from(homeButton).forEach(button => {
+  button.addEventListener('click', () => {
+    Array.from(allPageMinusHome).forEach(page => {
+      page.style.display = "none";
+    })
+    homePage.style.display = "block";
+  });
+})
 
 firstPageRightBar.addEventListener('click', () => {
   firstPage.style.display = "none";
