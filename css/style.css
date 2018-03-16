@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy|Open+Sans:400,600');
 
 /* Animation Keyframes */
-@keyframes page-elements-fade-in {
+@keyframes page-elements-fade-in-from-right {
   0% {
     opacity: 0;
+    transform: translateX(6em);
   }
   100% {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -327,9 +329,9 @@ hr {
 }
 
 .home-container.home-page,
-.main-container.first-page,
-.main-container.second-page
-/* .main-container.third-page */
+/* .main-container.first-page, */
+.main-container.second-page,
+.main-container.third-page
 {
   display: none;
 }
@@ -457,70 +459,109 @@ hr {
 
 
 /* About Page */
-.first-page-column {
-  background-color: hsla(0, 0%, 100%, 1);
-  font-size: 1rem;
-  color: hsla(0, 0%, 20%, 1);
-  box-shadow: 0 4px 10px 0 hsla(0, 0%, 0%, 0.2), 0 4px 20px 0 hsla(0, 0%, 0%, 0.19);
-  margin: 1em;
-  opacity: 0;
-  animation: page-elements-fade-in forwards;
-  animation-duration: 1.5s;
-}
-
-.first-page-column.left {
-  grid-column: 1 / 6;
+.content-container.first-page {
+  grid-column: 1 / 16;
   grid-row: 1 / 10;
-  animation-delay: 0.3s;
+  overflow-y: scroll;
+  display: flex;
 }
 
-.first-page-column.right {
-  grid-column: 6 / 16;
-  margin-left: 0;
-  padding: 1em;
-  padding-top: 0;
+.profile-icon {
+  margin-right: 0.6em;
+  color: hsla(174, 100%, 29%, 1);
 }
 
-.first-page-column.right.top {
-  grid-row: 1 / 6;
-  animation-delay: 0.8s;
-}
-
-.first-page-column.right.bottom {
-  grid-row: 6 / 10;
-  animation-delay: 1.3s;
+.first-page-name-card {
+  width: 25%;
+  height: 35em;
+  margin: 1em;
+  background-color: hsla(0, 0%, 100%, 1);
+  box-shadow: 0 4px 10px 0 hsla(0, 0%, 0%, 0.2), 0 4px 20px 0 hsla(0, 0%, 0%, 0.19);
+  opacity: 0;
+  animation: page-elements-fade-in-from-right 0.5s linear 0.3s forwards;
 }
 
 .profile-pic-container {
-  display: block;
-  width: 100%;
   position: relative;
+  width: 100%;
   height: auto;
+  margin: 0;
+}
+
+.profile-pic-container figcaption {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .profile-pic {
-  opacity: 0.8;
   width: 100%;
-}
-
-.profile-pic-name {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  color: hsla(0, 0%, 100%, 1);
-  padding-left: 1em;
+  opacity: 0.8;
 }
 
 .profile-stats-container {
-  display: block;
   width: 100%;
   padding-left: 0.5em;
+  font-size: 0.9rem;
+  color: hsla(0, 0%, 20%, 1);
 }
 
-.profile-stats-container i,
-.first-page-column.right i {
-  margin-right: 0.6em;
-  color: hsla(174, 100%, 29%, 1);
+.first-page-about-description {
+  width: 75%;
+  font-size: 1rem;
+  color: hsla(0, 0%, 20%, 1);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description {
+  width: 100%;
+  height: auto;
+  background-color: hsla(0, 0%, 100%, 1);
+  box-shadow: 0 4px 10px 0 hsla(0, 0%, 0%, 0.2), 0 4px 20px 0 hsla(0, 0%, 0%, 0.19);
+  padding: 1em;
+  margin: 1em;
+  margin-left: 0;
+  opacity: 0;
+  animation: page-elements-fade-in-from-bottom 0.5s linear forwards;
+}
+
+.description.profile {
+  animation-delay: 0.8s;
+}
+
+.description.technical {
+  margin-top: 0;
+  animation-delay: 1.3s;
+}
+
+.dev-icons-container {
+  height: auto;
+  padding: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dev-icons {
+  width: 8em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dev-icons p {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.dev-icons i {
+  font-size: 3rem;
+  margin: 0;
 }
 
 
@@ -692,8 +733,21 @@ hr {
              green-green 5s infinite alternate;
 }
 
+
 /* Media Queries */
 @media screen and (min-width: 68.75em) {
+  .profile-pic-container figcaption {
+    font-size: 1.5rem;
+  }
+  .profile-stats-container {
+    font-size: 1rem;
+  }
+  .first-page-about-description {
+    font-size: 1.1rem;
+  }
+  .dev-icons p {
+    font-size: 0.9rem;
+  }
   .second-page-title p {
     font-size: 2.5rem;
   }
@@ -717,6 +771,18 @@ hr {
   }
   .fa.right, .fa.left {
     font-size: 1.2rem;
+  }
+  .profile-pic-container figcaption {
+    font-size: 1rem;
+  }
+  .profile-stats-container {
+    font-size: 0.8rem;
+  }
+  .first-page-about-description {
+    font-size: 0.9rem;
+  }
+  .dev-icons p {
+    font-size: 0.7rem;
   }
   .second-page-title p {
     font-size: 1.8rem;
