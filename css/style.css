@@ -531,6 +531,20 @@ hr {
   animation-delay: 0.8s;
 }
 
+.description.profile p {
+  padding: 0.5em;
+}
+
+.description.profile p a:link,
+.description.profile p a:visited {
+  text-decoration: none;
+  color: hsla(240, 100%, 27%, 1);
+}
+
+.description.profile p a:hover {
+  color: hsla(33, 100%, 50%, 1);
+}
+
 .description.technical {
   margin-top: 0;
   animation-delay: 1.3s;
