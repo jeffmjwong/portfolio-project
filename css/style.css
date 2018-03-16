@@ -133,12 +133,12 @@
   }
 }
 
-@keyframes light-blue {
+@keyframes sky-blue {
   0% {
     color: black;
   }
   100% {
-    color: blue;
+    color: skyblue;
   }
 }
 
@@ -233,7 +233,7 @@ hr {
   opacity: 0;
   animation: middle-image-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 3.5s;
+  animation-delay: 4s;
 }
 
 .home-middle-image div:nth-child(8) {
@@ -241,7 +241,7 @@ hr {
   background-color: hsla(72, 100%, 45%, 1);
   animation: middle-image-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 4s;
+  animation-delay: 4.5s;
 }
 
 .home-middle-image div:nth-child(5) {
@@ -249,7 +249,7 @@ hr {
   background-color: hsla(144, 100%, 45%, 1);
   animation: middle-image-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 4.5s;
+  animation-delay: 5s;
 }
 
 .home-middle-image div:nth-child(6) {
@@ -257,7 +257,7 @@ hr {
   background-color: hsla(216, 100%, 45%, 1);
   animation: middle-image-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 5s;
+  animation-delay: 5.5s;
 }
 
 .home-middle-image div:nth-child(3) {
@@ -265,7 +265,7 @@ hr {
   background-color: hsla(288, 100%, 45%, 1);
   animation: middle-image-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 5.5s;
+  animation-delay: 6s;
 }
 
 .home-click {
@@ -282,7 +282,7 @@ hr {
 .anim-click-fade-in {
   animation: click-fade-in forwards;
   animation-duration: 0.2s;
-  animation-delay: 7s;
+  animation-delay: 7.5s;
   animation-timing-function: linear;
 }
 
@@ -297,7 +297,7 @@ hr {
 .anim-button-fade-in {
   animation: button-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 6s;
+  animation-delay: 6.5s;
   animation-timing-function: ease-in-out;
 }
 
@@ -512,7 +512,7 @@ hr {
 .content-container.second-page {
   grid-column: 2 / 16;
   grid-row: 1 / 10;
-  overflow: scroll;
+  overflow-y: scroll;
   display: flex;
   flex-wrap: wrap;
 }
@@ -532,12 +532,11 @@ hr {
 
 .second-page-app {
   width: 100%;
-  height: 300px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  /* margin: 1em; */
 }
 
 .second-page-app:nth-child(even) {
@@ -558,13 +557,30 @@ hr {
 
 .app-image-container {
   width: 25%;
+  margin: 1em;
+}
+
+.app-image-container figcaption {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 0.9rem;
+}
+
+.app-image-one,
+.app-image-two,
+.app-image-three {
+  width: 100%;
+  max-width: 15em;
+  height: auto;
+  box-shadow: 0 4px 10px 0 hsla(0, 0%, 0%, 0.2), 0 4px 20px 0 hsla(0, 0%, 0%, 0.19);
 }
 
 .app-description {
-  width: 70%;
+  width: 75%;
   height: 100%;
+  margin: 1em;
+  padding: 1em;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -572,13 +588,6 @@ hr {
   width: 100%;
   margin: 0;
   font-size: 1rem;
-}
-
-.app-image-one,
-.app-image-two,
-.app-image-three {
-  width: 100%;
-  height: auto;
 }
 
 
@@ -652,7 +661,7 @@ hr {
 
 .fab.twitter:hover {
   animation: social-media-effect 5s linear infinite,
-             light-blue 5s infinite alternate;
+             sky-blue 5s infinite alternate;
 }
 
 .fab.medium:hover {
@@ -661,7 +670,19 @@ hr {
 }
 
 /* Media Queries */
-@media screen and (max-width: 885px) {
+@media screen and (min-width: 68.75em) {
+  .second-page-title p {
+    font-size: 2.5rem;
+  }
+  .app-image-container figcaption {
+    font-size: 1rem;
+  }
+  .app-description p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 55.3em) {
   .first-page-column {
     font-size: 0.9rem;
   }
@@ -673,6 +694,12 @@ hr {
   }
   .fa.right, .fa.left {
     font-size: 1.2rem;
+  }
+  .second-page-title p {
+    font-size: 1.8rem;
+  }
+  .app-image-container figcaption {
+    font-size: 0.8rem;
   }
   .app-description p {
     font-size: 0.9rem;
