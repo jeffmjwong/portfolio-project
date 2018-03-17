@@ -330,8 +330,8 @@ hr {
 
 .home-container.home-page,
 .main-container.first-page,
-/* .main-container.second-page, */
-.main-container.third-page
+.main-container.second-page
+/* .main-container.third-page */
 {
   display: none;
 }
@@ -698,8 +698,7 @@ hr {
 }
 
 .third-page-social-media a {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 1.25em;
   opacity: 0;
   text-decoration: none;
   animation: scale 2s forwards;
@@ -749,7 +748,24 @@ hr {
 
 
 /* Media Queries */
+@media screen and (max-width: 64.01em /* between 752px and 1024px */) {
+  /* Include iPad Pro */
+  .fab.linkedin {
+    color: darkblue;
+  }
+  .fab.github {
+    color: darkred;
+  }
+  .fab.twitter {
+    color: skyblue;
+  }
+  .fab.medium {
+    color: green;
+  }
+}
+
 @media screen and (max-width: 63.99em /* between 752px and 1024px */) {
+  /* Exclude iPad Pro */
   .footer-nav a {
     font-size: 1rem;
   }
@@ -759,7 +775,7 @@ hr {
   .fa.right, .fa.left {
     font-size: 1.5rem;
   }
-  .content-container.first-page {
+  /* .content-container.first-page {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -779,7 +795,7 @@ hr {
   }
   .dev-icons p {
     font-size: 0.8rem;
-  }
+  } */
   .second-page-title p {
     font-size: 2rem;
   }
@@ -788,6 +804,12 @@ hr {
   }
   .app-description p {
     font-size: 1rem;
+  }
+  .third-page-speech p {
+    font-size: 2.5rem;
+  }
+  .third-page-social-media i {
+    font-size: 9rem;
   }
 }
 
@@ -823,6 +845,16 @@ hr {
     width: 100%;
     height: auto;
   }
+  .third-page-speech p {
+    font-size: 2rem;
+  }
+  .third-page-social-media i {
+    font-size: 8rem;
+  }
+  .third-page-social-media {
+    width: 60%;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 28em /* less than 448px */) {
@@ -834,6 +866,21 @@ hr {
   }
   .app-description p {
     font-size: 0.9rem;
+  }
+  .third-page-speech {
+    height: 10em;
+  }
+  .third-page-speech p {
+    font-size: 1.5rem;
+  }
+  .third-page-social-media {
+    height: auto;
+  }
+  .third-page-social-media a {
+    margin: 0.5em 1.25em;
+  }
+  .third-page-social-media i {
+    font-size: 6.5rem;
   }
 }
 
