@@ -329,8 +329,8 @@ hr {
 }
 
 .home-container.home-page,
-/* .main-container.first-page, */
-.main-container.second-page,
+.main-container.first-page,
+/* .main-container.second-page, */
 .main-container.third-page
 {
   display: none;
@@ -491,7 +491,7 @@ hr {
 .profile-pic-container figcaption {
   text-align: center;
   margin-top: 0.5em;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -503,13 +503,13 @@ hr {
 .profile-stats-container {
   width: 100%;
   padding-left: 0.5em;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: hsla(0, 0%, 20%, 1);
 }
 
 .first-page-about-description {
   width: 75%;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: hsla(0, 0%, 20%, 1);
   display: flex;
   flex-wrap: wrap;
@@ -569,7 +569,7 @@ hr {
   width: 100%;
   margin: 0;
   margin-bottom: 0.5em;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 
@@ -600,7 +600,7 @@ hr {
 
 .second-page-title p {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .second-page-app {
@@ -633,12 +633,12 @@ hr {
 .app-image-container {
   width: 25%;
   margin: 1em;
+  text-align: center;
 }
 
 .app-image-container figcaption {
-  text-align: center;
   margin-top: 0.5em;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .app-image {
@@ -660,7 +660,7 @@ hr {
 .app-description p {
   width: 100%;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 
@@ -749,31 +749,95 @@ hr {
 
 
 /* Media Queries */
-@media screen and (min-width: 68.75em) {
-  .profile-pic-container figcaption {
+@media screen and (max-width: 63.99em /* between 752px and 1024px */) {
+  .footer-nav a {
+    font-size: 1rem;
+  }
+  .footer-copyright {
+    font-size: 0.8rem;
+  }
+  .fa.right, .fa.left {
     font-size: 1.5rem;
   }
+  .content-container.first-page {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-page-name-card {
+    width: 60%;
+    height: auto;
+  }
+  .profile-pic-container figcaption {
+    font-size: 1.2rem;
+  }
   .profile-stats-container {
-    font-size: 1rem;
-  }
-  .first-page-about-description {
-    font-size: 1.1rem;
-  }
-  .dev-icons p {
     font-size: 0.9rem;
   }
-  .second-page-title p {
-    font-size: 2.5rem;
-  }
-  .app-image-container figcaption {
+  .first-page-about-description {
     font-size: 1rem;
   }
+  .dev-icons p {
+    font-size: 0.8rem;
+  }
+  .second-page-title p {
+    font-size: 2rem;
+  }
+  .app-image-container figcaption {
+    font-size: 0.9rem;
+  }
   .app-description p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 55.3em) {
+@media screen and (max-width: 47em /* between 448px and 752px */) {
+  /* .main-container.first-page,
+  .main-container.second-page,
+  .main-container.third-page {
+    display: grid;
+    height: auto;
+  }
+  .content-container.first-page,
+  .content-container.second-page,
+  .content-container.third-page {
+    grid-column: 1 / 17;
+    grid-row: none;
+    height: auto;
+    overflow: visible;
+  }
+  .sliding-bar,
+  .footer-container {
+    display: none;
+  } */
+  .second-page-app {
+    flex-wrap: wrap;
+  }
+  .app-image-container {
+    width: 100%
+  }
+  .app-image {
+    max-width: 10em;
+  }
+  .app-description {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 28em /* less than 448px */) {
+  .second-page-title p {
+    font-size: 1.5rem;
+  }
+  .app-image-container figcaption {
+    font-size: 0.8rem;
+  }
+  .app-description p {
+    font-size: 0.9rem;
+  }
+}
+
+/* @media screen and (max-width: 55.3em) {
   .first-page-column {
     font-size: 0.9rem;
   }
@@ -814,4 +878,4 @@ hr {
   .third-page-social-media i {
     font-size: 9rem;
   }
-}
+} */
