@@ -329,9 +329,9 @@ hr {
 }
 
 .home-container.home-page,
-.main-container.first-page,
-.main-container.second-page
-/* .main-container.third-page */
+/* .main-container.first-page, */
+.main-container.second-page,
+.main-container.third-page
 {
   display: none;
 }
@@ -473,7 +473,7 @@ hr {
 
 .first-page-name-card {
   width: 25%;
-  height: 35em;
+  height: 43em;
   margin: 1em;
   background-color: hsla(0, 0%, 100%, 1);
   box-shadow: 0 4px 10px 0 hsla(0, 0%, 0%, 0.2), 0 4px 20px 0 hsla(0, 0%, 0%, 0.19);
@@ -482,7 +482,6 @@ hr {
 }
 
 .profile-pic-container {
-  position: relative;
   width: 100%;
   height: auto;
   margin: 0;
@@ -750,6 +749,38 @@ hr {
 /* Media Queries */
 @media screen and (max-width: 64.01em /* between 752px and 1024px */) {
   /* Include iPad Pro */
+  .content-container.first-page {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-page-name-card {
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+    box-shadow: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .profile-pic-container {
+    width: auto;
+  }
+  .profile-pic {
+    max-width: 30em;
+  }
+  .profile-stats-container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .profile-stats-container p {
+    margin: 1em;
+  }
+  .profile-stats-container p:nth-child(3),
+  .profile-stats-container p:nth-child(4) {
+    display: none;
+  }
   .fab.linkedin {
     color: darkblue;
   }
@@ -908,21 +939,5 @@ hr {
   }
   .dev-icons p {
     font-size: 0.7rem;
-  }
-  .second-page-title p {
-    font-size: 1.8rem;
-  }
-  .app-image-container figcaption {
-    font-size: 0.8rem;
-  }
-  .app-description p {
-    font-size: 0.9rem;
-  }
-  .third-page-social-media {
-    width: 60%;
-    flex-wrap: wrap;
-  }
-  .third-page-social-media i {
-    font-size: 9rem;
   }
 } */
