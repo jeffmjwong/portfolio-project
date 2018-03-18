@@ -851,6 +851,7 @@ hr {
   }
   .profile-pic {
     max-width: 25em;
+    opacity: 1;
   }
   .profile-stats-container {
     padding: 0;
