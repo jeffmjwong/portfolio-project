@@ -189,15 +189,23 @@ hr {
   height: 100vh;
 }
 
-.home-container.home-page {
+/* .home-container.home-page {
   background: linear-gradient(-45deg, hsla(180, 100%, 25%, 0.8), hsla(180, 100%, 25%, 0));
+} */
+
+.home-page-background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .home-intro-line1 {
   position: absolute;
   top: calc(0vh + 1em);
   left: 20%;
-  color: hsla(180, 100%, 15%, 1);
+  color: hsla(180, 100%, 95%, 1);
   font-weight: 600;
   width: 5.9em;
   margin: 0 auto;
@@ -216,7 +224,7 @@ hr {
   position: absolute;
   top: calc(0vh + 6em);
   left: 20.5%;
-  color: hsla(180, 100%, 15%, 0.7);
+  color: hsla(180, 100%, 95%, 0.7);
   font-weight: 400;
   width: 17em;
   margin: 0 auto;
@@ -248,7 +256,7 @@ hr {
   opacity: 0;
   animation: middle-image-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 4s;
+  animation-delay: 4.5s;
 }
 
 .home-middle-image div:nth-child(8) {
@@ -256,7 +264,7 @@ hr {
   background-color: hsla(72, 100%, 45%, 1);
   animation: middle-image-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 4.5s;
+  animation-delay: 5.2s;
 }
 
 .home-middle-image div:nth-child(5) {
@@ -264,7 +272,7 @@ hr {
   background-color: hsla(144, 100%, 45%, 1);
   animation: middle-image-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 5s;
+  animation-delay: 5.9s;
 }
 
 .home-middle-image div:nth-child(6) {
@@ -272,7 +280,7 @@ hr {
   background-color: hsla(216, 100%, 45%, 1);
   animation: middle-image-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 5.5s;
+  animation-delay: 6.6s;
 }
 
 .home-middle-image div:nth-child(3) {
@@ -280,7 +288,7 @@ hr {
   background-color: hsla(288, 100%, 45%, 1);
   animation: middle-image-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 6s;
+  animation-delay: 7.3s;
 }
 
 .home-click {
@@ -289,7 +297,7 @@ hr {
   left: 40%;
   font-family: 'Satisfy', cursive;
   font-size: 3em;
-  color: hsla(180, 100%, 12%, 1);
+  color: hsla(180, 100%, 95%, 1);
   margin: 0 auto;
   opacity: 0;
 }
@@ -297,7 +305,7 @@ hr {
 .anim-click-fade-in {
   animation: click-fade-in forwards;
   animation-duration: 0.2s;
-  animation-delay: 7.5s;
+  animation-delay: 10.5s;
   animation-timing-function: linear;
 }
 
@@ -312,12 +320,12 @@ hr {
 .anim-button-fade-in {
   animation: button-fade-in forwards;
   animation-duration: 1s;
-  animation-delay: 6.5s;
+  animation-delay: 8.5s;
   animation-timing-function: ease-in-out;
 }
 
 .fa.home-go-next {
-  color: hsla(180, 100%, 15%, 1);
+  color: hsla(180, 100%, 95%, 1);
   cursor: pointer;
 }
 
@@ -328,8 +336,8 @@ hr {
   animation-iteration-count: infinite;
 }
 
-.home-container.home-page,
-/* .main-container.first-page, */
+/* .home-container.home-page, */
+.main-container.first-page,
 .main-container.second-page,
 .main-container.third-page
 {
@@ -715,6 +723,28 @@ hr {
   font-size: 1.1rem;
 }
 
+.app-description p a {
+  text-decoration: none;
+}
+
+.app-description p a:link,
+.app-description p a:visited {
+  color: hsla(240, 100%, 27%, 1);
+}
+
+.app-description p a:hover {
+  color: hsla(33, 100%, 50%, 1);
+}
+
+.app-description p a.try:link,
+.app-description p a.try:visited {
+  color: hsla(135, 100%, 30%, 1);
+}
+
+.app-description p a.try:hover {
+  color: hsla(33, 100%, 50%, 1);
+}
+
 
 /* Contact Page */
 .content-container.third-page {
@@ -820,7 +850,7 @@ hr {
     width: auto;
   }
   .profile-pic {
-    max-width: 30em;
+    max-width: 25em;
   }
   .profile-stats-container {
     padding: 0;
