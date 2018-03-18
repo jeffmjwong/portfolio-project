@@ -336,8 +336,8 @@ hr {
   animation-iteration-count: infinite;
 }
 
-/* .home-container.home-page, */
-.main-container.first-page,
+.home-container.home-page,
+/* .main-container.first-page, */
 .main-container.second-page,
 .main-container.third-page
 {
@@ -970,6 +970,9 @@ hr {
   }
   .second-page-app {
     flex-wrap: wrap;
+  }
+  .second-page-app:nth-child(3) {
+    flex-direction: column-reverse;
   }
   .app-image-container {
     width: 100%

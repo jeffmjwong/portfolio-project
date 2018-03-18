@@ -14,11 +14,11 @@ const secondPageRightBar = document.querySelectorAll('.second-page .sliding-bar'
 const thirdPage = document.querySelector('.main-container.third-page');
 const thirdPageLeftBar = document.querySelectorAll('.third-page .sliding-bar')[0];
 
-homePageBackgroundVideo.addEventListener('canplay', () => {
-  setTimeout(() => {
-    homePageBackgroundVideo.play();
-  }, 3200);
-});
+// homePageBackgroundVideo.addEventListener('canplay', () => {
+//   setTimeout(() => {
+//     homePageBackgroundVideo.play();
+//   }, 3200);
+// });
 
 menuButton.addEventListener('click', () => {
   dropdownContent.classList.toggle("show");
