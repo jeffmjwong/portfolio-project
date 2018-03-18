@@ -189,9 +189,9 @@ hr {
   height: 100vh;
 }
 
-/* .home-container.home-page {
+.home-container.home-page {
   background: linear-gradient(-45deg, hsla(180, 100%, 25%, 0.8), hsla(180, 100%, 25%, 0));
-} */
+}
 
 .home-page-background-video {
   position: fixed;
