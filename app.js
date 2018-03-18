@@ -1,6 +1,9 @@
 const homePage = document.querySelector('.home-container.home-page')
 const nextButton = document.querySelector('.button-at-homepage');
 const homeButton = document.getElementsByClassName('footer-home-button');
+const headerBar = document.querySelector('.header-bar');
+const menuButton = document.querySelector('.header-menu-button');
+const dropdownContent = document.querySelector('.header-menu-dropdown-content');
 const allPageMinusHome = document.getElementsByClassName('main-container');
 const firstPage = document.querySelector('.main-container.first-page')
 const firstPageRightBar = document.querySelector('.first-page .sliding-bar');
@@ -12,6 +15,18 @@ const thirdPageLeftBar = document.querySelectorAll('.third-page .sliding-bar')[0
 const thirdPageRightBar = document.querySelectorAll('.third-page .sliding-bar')[1];
 const forthPage = document.querySelector('.main-container.forth-page')
 const forthPageLeftBar = document.querySelector('.forth-page .sliding-bar');
+
+menuButton.addEventListener('click', () => {
+  dropdownContent.classList.toggle("show");
+});
+
+window.onclick = evt => {
+  if (!evt.target.matches(".header-menu-button i")) {
+    if (dropdownContent.classList.contains("show")) {
+      dropdownContent.classList.remove("show");
+    }
+  }
+};
 
 nextButton.addEventListener('click', () => {
   homePage.style.display = "none";
