@@ -1,0 +1,163 @@
+/* Animation Keyframes */
+@keyframes page-elements-fade-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(6em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes page-elements-fade-in-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(6em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0.3em);
+  }
+}
+
+@keyframes move-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-0.3em);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes type-writer-line1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5.9em;
+  }
+}
+
+@keyframes blink-text-cursor-line1 {
+  0% {
+    border-right-color: hsla(0, 0%, 75%, 1);
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes type-writer-line2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 17em;
+  }
+}
+
+@keyframes middle-image-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes click-fade-in {
+  0% {
+    opacity: 1;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes button-fade-in {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes button-focus1 {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes social-media-effect {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes dark-blue {
+  0% {
+    color: black;
+  }
+  100% {
+    color: darkblue;
+  }
+}
+
+@keyframes dark-red {
+  0% {
+    color: black;
+  }
+  100% {
+    color: darkred;
+  }
+}
+
+@keyframes sky-blue {
+  0% {
+    color: black;
+  }
+  100% {
+    color: skyblue;
+  }
+}
+
+@keyframes green-green {
+  0% {
+    color: black;
+  }
+  100% {
+    color: green;
+  }
+}

@@ -1,0 +1,229 @@
+/* Media Queries */
+@media screen and (max-width: 64.01em /* between 752px and 1024px */) {
+  /* Include iPad Pro */
+  .content-container.first-page {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-page-name-card {
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+    box-shadow: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .profile-pic-container {
+    width: auto;
+  }
+  .profile-pic {
+    max-width: 25em;
+    opacity: 0.9;
+  }
+  .profile-stats-container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .profile-stats-container p {
+    margin: 1em;
+  }
+  .profile-stats-container p:nth-child(3),
+  .profile-stats-container p:nth-child(4) {
+    display: none;
+  }
+  .first-page-about-description {
+    width: 100%;
+  }
+  .description {
+    margin: 1.5em 0;
+    padding: 2em;
+  }
+  .third-page-social-media a i.linkedin {
+    color: darkblue;
+  }
+  .third-page-social-media a i.github {
+    color: darkred;
+  }
+  .third-page-social-media a i.twitter {
+    color: skyblue;
+  }
+  .third-page-social-media a i.medium {
+    color: green;
+  }
+}
+
+@media screen and (max-width: 63.99em /* between 752px and 1024px */) {
+  /* Exclude iPad Pro */
+  .sliding-bar i {
+    font-size: 1.5rem;
+  }
+  .footer-home-button i {
+    font-size: 1.8rem;
+  }
+  .footer-nav a {
+    font-size: 1rem;
+  }
+  .footer-copyright {
+    font-size: 0.8rem;
+  }
+  .second-page-title p {
+    font-size: 2rem;
+  }
+  .app-image-container figcaption {
+    font-size: 0.9rem;
+  }
+  .app-description p {
+    font-size: 1rem;
+  }
+  .third-page-speech p {
+    font-size: 2.5rem;
+  }
+  .third-page-social-media i {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (max-width: 47em /* between 448px and 752px */) {
+  .home-container.home-page {
+    display: none;
+  }
+  .main-container.first-page,
+  .main-container.second-page,
+  .main-container.third-page {
+    display: grid;
+    height: auto;
+  }
+  .content-container.first-page,
+  .content-container.second-page,
+  .content-container.third-page {
+    grid-column: 1 / 17;
+    grid-row: none;
+    overflow: visible;
+  }
+  .content-container.first-page {
+    margin-top: 3em;
+  }
+  .header-bar {
+    display: flex;
+  }
+  .sliding-bar,
+  .footer-container {
+    display: none;
+  }
+  .profile-pic {
+    max-width: 20em;
+  }
+  .profile-pic-container figcaption {
+    font-size: 1.2rem;
+  }
+  .profile-stats-container {
+    font-size: 0.9rem;
+  }
+  .first-page-about-description {
+    font-size: 0.9rem;
+  }
+  .dev-icons-container {
+    padding: 0;
+    justify-content: center;
+  }
+  .dev-icons {
+    width: 6.5em;
+  }
+  .dev-icons p {
+    font-size: 0.8rem;
+  }
+  .dev-icons i {
+    font-size: 2.5rem;
+  }
+  .second-page-app {
+    flex-wrap: wrap;
+  }
+  .second-page-app:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+  .app-image-container {
+    width: 100%
+  }
+  .app-image {
+    max-width: 10em;
+  }
+  .app-description {
+    width: 100%;
+    height: auto;
+  }
+  .third-page-speech p {
+    font-size: 2rem;
+  }
+  .third-page-social-media {
+    width: 60%;
+    flex-wrap: wrap;
+  }
+  .third-page-social-media i {
+    font-size: 8rem;
+  }
+  /* Remove all animations */
+  .first-page-name-card,
+  .description,
+  .second-page-title,
+  .second-page-app,
+  .third-page-social-media a,
+  .third-page-social-media a i.linkedin:hover,
+  .third-page-social-media a i.github:hover,
+  .third-page-social-media a i.twitter:hover,
+  .third-page-social-media a i.medium:hover {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 28em /* less than 448px */) {
+  /* For most mobile phones */
+  .profile-pic {
+    max-width: 15em;
+  }
+  .profile-pic-container figcaption {
+    font-size: 1.1rem;
+  }
+  .profile-stats-container {
+    font-size: 0.8rem;
+  }
+  .first-page-about-description {
+    font-size: 0.8rem;
+  }
+  .dev-icons {
+    width: 6.2em;
+  }
+  .dev-icons p {
+    font-size: 0.7rem;
+  }
+  .dev-icons i {
+    font-size: 2.2rem;
+  }
+  .second-page-title p {
+    font-size: 1.5rem;
+  }
+  .app-image-container figcaption {
+    font-size: 0.8rem;
+  }
+  .app-description p {
+    font-size: 0.9rem;
+  }
+  .third-page-speech {
+    height: 10em;
+  }
+  .third-page-speech p {
+    font-size: 1.5rem;
+  }
+  .third-page-social-media {
+    height: auto;
+  }
+  .third-page-social-media a {
+    margin: 0.5em 1.25em;
+  }
+  .third-page-social-media i {
+    font-size: 6.5rem;
+  }
+}
