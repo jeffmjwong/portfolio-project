@@ -2,18 +2,29 @@
 @media screen and (max-width: 64.01em /* between 752px and 1024px */) {
   /* Include iPad Pro */
   .content-container.first-page {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .first-page-name-card {
     width: 100%;
     height: auto;
     background-color: inherit;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .profile-pic-container {
     width: auto;
@@ -24,8 +35,12 @@
   }
   .profile-stats-container {
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .profile-stats-container p {
     margin: 1em;
@@ -93,12 +108,15 @@
   .main-container.first-page,
   .main-container.second-page,
   .main-container.third-page {
+    display: -ms-grid;
     display: grid;
     height: auto;
   }
   .content-container.first-page,
   .content-container.second-page,
   .content-container.third-page {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 16;
     grid-column: 1 / 17;
     grid-row: none;
     overflow: visible;
@@ -107,6 +125,8 @@
     margin-top: 3em;
   }
   .header-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .sliding-bar,
@@ -127,7 +147,9 @@
   }
   .dev-icons-container {
     padding: 0;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .dev-icons {
     width: 6.5em;
@@ -139,10 +161,14 @@
     font-size: 2.5rem;
   }
   .second-page-app {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .second-page-app:nth-child(3) {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .app-image-container {
     width: 100%
@@ -160,7 +186,8 @@
   .third-page-social-media {
     width: 60%;
     height: auto;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .third-page-social-media i {
     font-size: 8rem;
@@ -176,7 +203,8 @@
   .third-page-social-media a i.twitter:hover,
   .third-page-social-media a i.medium:hover {
     opacity: 1;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
   }
 }
 

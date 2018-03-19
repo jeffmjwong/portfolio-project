@@ -1,52 +1,131 @@
-/* Animation Keyframes */
-@keyframes page-elements-fade-in-from-right {
+//* Animation Keyframes */
+@-webkit-keyframes page-elements-fade-in-from-right {
   0% {
     opacity: 0;
-    transform: translateX(6em);
+    -webkit-transform: translateX(6em);
+            transform: translateX(6em);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes page-elements-fade-in-from-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(6em);
+            transform: translateX(6em);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes page-elements-fade-in-from-bottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(6em);
+            transform: translateY(6em);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes page-elements-fade-in-from-bottom {
   0% {
     opacity: 0;
-    transform: translateY(6em);
+    -webkit-transform: translateY(6em);
+            transform: translateY(6em);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes move-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(0.3em);
+            transform: translateX(0.3em);
   }
 }
 
 @keyframes move-right {
   0% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    transform: translateX(0.3em);
+    -webkit-transform: translateX(0.3em);
+            transform: translateX(0.3em);
+  }
+}
+
+@-webkit-keyframes move-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-0.3em);
+            transform: translateX(-0.3em);
   }
 }
 
 @keyframes move-left {
   0% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    transform: translateX(-0.3em);
+    -webkit-transform: translateX(-0.3em);
+            transform: translateX(-0.3em);
+  }
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 1;
   }
 }
 
 @keyframes scale {
   0% {
-    transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
     opacity: 0;
   }
   100% {
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes type-writer-line1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5.9em;
   }
 }
 
@@ -59,12 +138,30 @@
   }
 }
 
+@-webkit-keyframes blink-text-cursor-line1 {
+  0% {
+    border-right-color: hsla(0, 0%, 75%, 1);
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
 @keyframes blink-text-cursor-line1 {
   0% {
     border-right-color: hsla(0, 0%, 75%, 1);
   }
   100% {
     border-right-color: transparent;
+  }
+}
+
+@-webkit-keyframes type-writer-line2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 17em;
   }
 }
 
@@ -77,6 +174,15 @@
   }
 }
 
+@-webkit-keyframes middle-image-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes middle-image-fade-in {
   0% {
     opacity: 0;
@@ -86,43 +192,108 @@
   }
 }
 
-@keyframes click-fade-in {
+@-webkit-keyframes click-fade-in {
   0% {
     opacity: 1;
-    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
   100% {
     opacity: 1;
-    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes click-fade-in {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes button-fade-in {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
 @keyframes button-fade-in {
   0% {
     opacity: 1;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
     opacity: 1;
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes button-focus1 {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3);
   }
 }
 
 @keyframes button-focus1 {
   0% {
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
   100% {
-    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3);
+  }
+}
+
+@-webkit-keyframes social-media-effect {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
   }
 }
 
 @keyframes social-media-effect {
   0% {
-    transform: rotateZ(0);
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
   }
   100% {
-    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes dark-blue {
+  0% {
+    color: hsla(0, 0%, 0%, 1);
+  }
+  100% {
+    color: hsla(240, 100%, 27%, 1);
   }
 }
 
@@ -135,6 +306,15 @@
   }
 }
 
+@-webkit-keyframes dark-red {
+  0% {
+    color: hsla(0, 0%, 0%, 1);
+  }
+  100% {
+    color: hsla(0, 100%, 27%, 1);
+  }
+}
+
 @keyframes dark-red {
   0% {
     color: hsla(0, 0%, 0%, 1);
@@ -144,12 +324,30 @@
   }
 }
 
+@-webkit-keyframes sky-blue {
+  0% {
+    color: hsla(0, 0%, 0%, 1);
+  }
+  100% {
+    color: hsla(197, 71%, 73%, 1);
+  }
+}
+
 @keyframes sky-blue {
   0% {
     color: hsla(0, 0%, 0%, 1);
   }
   100% {
     color: hsla(197, 71%, 73%, 1);
+  }
+}
+
+@-webkit-keyframes green-green {
+  0% {
+    color: hsla(0, 0%, 0%, 1);
+  }
+  100% {
+    color: hsla(120, 100%, 25%, 1);
   }
 }
 
