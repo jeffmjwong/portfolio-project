@@ -42,16 +42,16 @@
     padding: 2em;
   }
   .third-page-social-media a i.linkedin {
-    color: darkblue;
+    color: hsla(240, 100%, 27%, 1);
   }
   .third-page-social-media a i.github {
-    color: darkred;
+    color: hsla(0, 100%, 27%, 1);
   }
   .third-page-social-media a i.twitter {
-    color: skyblue;
+    color: hsla(197, 71%, 73%, 1);
   }
   .third-page-social-media a i.medium {
-    color: green;
+    color: hsla(120, 100%, 25%, 1);
   }
 }
 
