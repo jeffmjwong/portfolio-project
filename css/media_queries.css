@@ -159,6 +159,7 @@
   }
   .third-page-social-media {
     width: 60%;
+    height: auto;
     flex-wrap: wrap;
   }
   .third-page-social-media i {

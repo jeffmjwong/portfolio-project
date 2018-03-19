@@ -25,7 +25,7 @@ hr {
 }
 
 .home-container.home-page {
-  background: linear-gradient(-45deg, hsla(180, 100%, 25%, 0.8), hsla(180, 100%, 25%, 0));
+  background: hsla(0, 0, 0%, 1);
 }
 
 .home-page-background-video {
