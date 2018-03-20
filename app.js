@@ -14,11 +14,11 @@ const secondPageRightBar = document.querySelectorAll('.second-page .sliding-bar'
 const thirdPage = document.querySelector('.main-container.third-page');
 const thirdPageLeftBar = document.querySelectorAll('.third-page .sliding-bar')[0];
 
-homePageBackgroundVideo.addEventListener('canplay', () => {
-  setTimeout(() => {
-    homePageBackgroundVideo.play();
-  }, 2800);
-});
+// homePageBackgroundVideo.addEventListener('canplay', () => {
+//   setTimeout(() => {
+//     homePageBackgroundVideo.play();
+//   }, 2800);
+// });
 
 menuButton.addEventListener('click', () => {
   dropdownContent.classList.toggle("show");
@@ -37,14 +37,14 @@ nextButton.addEventListener('click', () => {
   firstPage.style.display = "grid";
 });
 
-Array.from(homeButton).forEach(button => {
-  button.addEventListener('click', () => {
-    Array.from(allPageMinusHome).forEach(page => {
-      page.style.display = "none";
-    })
+for (let i = 0; i < homeButton.length; i++) {
+  homeButton[i].addEventListener('click', () => {
+    for (let i = 0; i < allPageMinusHome.length ; i++) {
+      allPageMinusHome[i].style.display = "none";
+    };
     homePage.style.display = "block";
   });
-})
+};
 
 firstPageRightBar.addEventListener('click', () => {
   firstPage.style.display = "none";
