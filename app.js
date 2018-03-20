@@ -17,7 +17,7 @@ const thirdPageLeftBar = document.querySelectorAll('.third-page .sliding-bar')[0
 homePageBackgroundVideo.addEventListener('canplay', () => {
   setTimeout(() => {
     homePageBackgroundVideo.play();
-  }, 3000);
+  }, 2800);
 });
 
 menuButton.addEventListener('click', () => {

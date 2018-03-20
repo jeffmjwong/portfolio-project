@@ -26,7 +26,7 @@ hr {
 }
 
 .home-container.home-page {
-  background: hsla(0, 0, 0%, 1);
+  background: hsla(0, 0%, 0%, 1);
 }
 
 .home-page-background-video {
@@ -94,46 +94,33 @@ hr {
 }
 
 .home-middle-image div:nth-child(7) {
-  background-color: hsla(0, 100%, 45%, 1);
+  background-color: hsla(0, 100%, 45%, 0.9);
   -webkit-animation: middle-image-fade-in 1s 4.5s forwards;
           animation: middle-image-fade-in 1s 4.5s forwards;
 }
 
 .home-middle-image div:nth-child(8) {
-  background-color: hsla(72, 100%, 45%, 1);
+  background-color: hsla(72, 100%, 45%, 0.9);
   -webkit-animation: middle-image-fade-in 1s 5.4s forwards;
           animation: middle-image-fade-in 1s 5.4s forwards;
 }
 
 .home-middle-image div:nth-child(5) {
-  background-color: hsla(144, 100%, 45%, 1);
+  background-color: hsla(144, 100%, 45%, 0.9);
   -webkit-animation: middle-image-fade-in 1s 6.3s forwards;
           animation: middle-image-fade-in 1s 6.3s forwards;
 }
 
 .home-middle-image div:nth-child(6) {
-  background-color: hsla(216, 100%, 45%, 1);
+  background-color: hsla(216, 100%, 45%, 0.9);
   -webkit-animation: middle-image-fade-in 1s 7.2s forwards;
           animation: middle-image-fade-in 1s 7.2s forwards;
 }
 
 .home-middle-image div:nth-child(3) {
-  background-color: hsla(288, 100%, 45%, 1);
+  background-color: hsla(288, 100%, 45%, 0.9);
   -webkit-animation: middle-image-fade-in 1s 8.1s forwards;
           animation: middle-image-fade-in 1s 8.1s forwards;
-}
-
-.home-click {
-  position: absolute;
-  bottom: calc(0vh + 3em);
-  left: 40%;
-  font-family: 'Satisfy', cursive;
-  font-size: 3em;
-  color: hsla(180, 100%, 95%, 1);
-  margin: 0 auto;
-  opacity: 0;
-  -webkit-animation: click-fade-in 0.5s linear 12s forwards;
-          animation: click-fade-in 0.5s linear 12s forwards;
 }
 
 .button-at-homepage {
@@ -145,13 +132,27 @@ hr {
   cursor: pointer;
   opacity: 0;
   -webkit-animation: button-fade-in 1s ease-in-out 9.5s forwards;
-          animation: button-fade-in 1s ease-in-out 9.5s forwards;
+  animation: button-fade-in 1s ease-in-out 9.5s forwards;
 }
 
 .button-at-homepage i:hover {
   -webkit-animation: button-focus1 0.7s linear infinite;
-          animation: button-focus1 0.7s linear infinite;
+  animation: button-focus1 0.7s linear infinite;
 }
+
+.home-click {
+  position: absolute;
+  bottom: calc(0vh + 3em);
+  left: 40%;
+  font-family: 'Satisfy', cursive;
+  font-size: 3em;
+  color: hsla(180, 100%, 95%, 1);
+  margin: 0 auto;
+  opacity: 0;
+  -webkit-animation: click-fade-in 0.2s linear 11.8s forwards;
+          animation: click-fade-in 0.2s linear 11.8s forwards;
+}
+
 
 /* .home-container.home-page, */
 .main-container.first-page,
